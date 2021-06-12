@@ -1,0 +1,3 @@
+.\sqlpackage.exe /action:extract /ssn:data-toboggan.sql.azuresynapse.net /sdn:dedicated /su:sqladminuser /sp:somethingsecret /tf:sample.dacpac  
+
+./sqlpackage.exe /action:extract /ssn:data-toboggan.sql.azuresynapse.net /sdn:dedicated /su:sqladminuser /sp:somethingsecret /tf:sample.dacpac /p:AzureStorageBlobEndpoint="https://datatoboggan.blob.core.windows.net/" /p:AzureStorageContainer=dataexport /p:AzureStorageKey="somelongstring"
